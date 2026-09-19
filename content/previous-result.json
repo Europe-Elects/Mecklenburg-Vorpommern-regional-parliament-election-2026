@@ -1,7 +1,16 @@
 {
-  "_comment": "The previous election's certified result, shown in its own accordion. Also the source of the previous-result column in the results table when parties.baselineSource is \"content\" — which is what you want where the only PartiesData entry for this country is the national one and its last_results would be the wrong baseline for a regional contest. `seats` may be null.",
+  "_comment": "The 2021 certified result, shown in its own accordion. parties.baselineSource is \"partiesdata\" — the Mecklenburg-Vorpommern PartiesData entry carries these same shares as last_results — so this file is the accordion only, and it adds the seat counts PartiesData does not hold. Parties below the threshold won no seats, hence null.",
   "rows": [
-    { "party": "TODO CODE", "votePercent": 0, "seats": null },
-    { "party": "TODO CODE", "votePercent": 0, "seats": null }
+    { "party": "SPD", "votePercent": 39.6, "seats": 34 },
+    { "party": "AFD", "votePercent": 16.7, "seats": 14 },
+    { "party": "CDU", "votePercent": 13.3, "seats": 12 },
+    { "party": "LINKE", "votePercent": 9.9, "seats": 9 },
+    { "party": "GRUENE", "votePercent": 6.3, "seats": 5 },
+    { "party": "FDP", "votePercent": 5.8, "seats": 5 },
+    { "party": "TSP", "votePercent": 1.7, "seats": null },
+    { "party": "BASIS", "votePercent": 1.7, "seats": null },
+    { "party": "FW", "votePercent": 1.1, "seats": null },
+    { "party": "HEIMAT", "votePercent": 0.8, "seats": null },
+    { "party": "PARTEI", "votePercent": 0.8, "seats": null }
   ]
 }

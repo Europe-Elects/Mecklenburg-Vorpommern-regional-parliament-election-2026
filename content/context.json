@@ -1,8 +1,9 @@
 {
-  "_comment": "The Context accordion. One string per paragraph. Inline HTML is allowed for emphasis and links — <strong>, <em>, <a>, <mark> — and nothing else is rendered. Delete the placeholders.",
+  "_comment": "The Context accordion. One string per paragraph. Inline HTML is allowed for emphasis and links — <strong>, <em>, <a>, <mark> — and nothing else is rendered.",
   "paragraphs": [
-    "TODO Who governs now, on what majority, and what the polls have done to it since the last election.",
-    "TODO Each significant party, its European affiliation and its leader.",
-    "TODO Anything unusual about this contest: a new party standing for the first time, a changed threshold, a redrawn map."
+    "Mecklenburg-Vorpommern is governed by a coalition of the centre-left SPD (S&amp;D) and Die Linke (LEFT) under minister-president <strong>Manuela Schwesig</strong>, in office since 2017 and re-elected in 2021 on the SPD's best state result since reunification — 39.6%, enough for 34 of 79 seats. The SPD has led every government in the state since 1998.",
+    "The contest is between the SPD (S&amp;D) and the AfD (ESN), and polling through 2026 has put them within a point or two of each other in the high thirties. The AfD's rise is the mirror image of the CDU (EPP)'s collapse: the CDU took 13.3% in 2021 and has polled between 6% and 10% since the summer, which would be the worst state-election result in the party's history.",
+    "The SPD (S&amp;D) is affiliated with the <strong>Party of European Socialists</strong> and sits in the S&amp;D group. The CDU (EPP) sits with the <strong>European People's Party</strong>, Die Linke (LEFT) with the <strong>Party of the European Left</strong>, Bündnis 90/Die Grünen with the European Green Party in <strong>Greens/EFA</strong>, and the FDP (RE) with <strong>Renew Europe</strong>. The AfD's MEPs sit with the far-right <strong>Europe of Sovereign Nations (ESN)</strong> group.",
+    "Nineteen state lists were admitted, carrying 313 candidates. The <strong>Sahra Wagenknecht Alliance (BSW (NI))</strong> is contesting Mecklenburg-Vorpommern for the first time and has polled at or below the 5% threshold all year; the FDP (RE), which cleared it with 5.8% in 2021, has been prompted for in only some polls and scored 2–3% in those. Die Heimat, the former NPD, and dieBasis both contested 2021 and are not standing again."
   ]
 }

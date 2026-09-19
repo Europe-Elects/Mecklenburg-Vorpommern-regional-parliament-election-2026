@@ -1,0 +1,479 @@
+{
+  "updated": "2026-09-19T17:09:38.689Z",
+  "source": {
+    "repo": "Europe-Elects/PartiesData",
+    "ref": "main",
+    "continent": "Europe",
+    "country": "Germany",
+    "electionType": "Mecklenburg-Vorpommern regional",
+    "localPath": null,
+    "url": "https://github.com/Europe-Elects/PartiesData/blob/main/Europe/partiesdata.yaml",
+    "resolved": true,
+    "electionData": {
+      "last_election_date": "2021",
+      "next_election_date": "20 September 2026"
+    }
+  },
+  "baselineSource": "partiesdata",
+  "order": [
+    "SPD",
+    "AFD",
+    "CDU",
+    "LINKE",
+    "GRUENE",
+    "FDP",
+    "TSP",
+    "FW",
+    "PARTEI",
+    "PIRATEN",
+    "ODP",
+    "BUENDNISC",
+    "BSW",
+    "HPD",
+    "KPD",
+    "PDF",
+    "TEAMFREIHEIT",
+    "VOLT",
+    "WLD",
+    "BASIS",
+    "HEIMAT"
+  ],
+  "others": {
+    "code": "OTHERS",
+    "name": "Others",
+    "color": "#c7c4b8",
+    "dark": true
+  },
+  "parties": {
+    "SPD": {
+      "code": "SPD",
+      "key": "SPD",
+      "name": "SPD (S&D)",
+      "full": "Sozialdemokratische Partei Deutschlands",
+      "family": "Social Democrats",
+      "epGroup": "S&D",
+      "epGroupBase": "S&D",
+      "euro": "PES (S&D)",
+      "color": "#FF0000",
+      "dark": false,
+      "baseline": 39.6,
+      "gov": "Govt.",
+      "inPrimary": true,
+      "via": "source",
+      "aliases": [
+        "spd"
+      ]
+    },
+    "AFD": {
+      "code": "AFD",
+      "key": "AfD",
+      "name": "AfD (ESN)",
+      "full": "Alternative für Deutschland",
+      "family": "Far-right / populist",
+      "epGroup": "ESN",
+      "epGroupBase": "ESN",
+      "euro": "ESN (ESN)",
+      "color": "#70463A",
+      "dark": false,
+      "baseline": 16.7,
+      "gov": null,
+      "inPrimary": true,
+      "via": "source",
+      "aliases": [
+        "afd"
+      ]
+    },
+    "CDU": {
+      "code": "CDU",
+      "key": "CDU",
+      "name": "CDU (EPP)",
+      "full": "Christlich Demokratische Union Deutschlands",
+      "family": "Christian Democrats",
+      "epGroup": "EPP",
+      "epGroupBase": "EPP",
+      "euro": "EPP (EPP)",
+      "color": "#3399FF",
+      "dark": false,
+      "baseline": 13.3,
+      "gov": null,
+      "inPrimary": true,
+      "via": "source",
+      "aliases": [
+        "cdu",
+        "cdu/csu"
+      ]
+    },
+    "LINKE": {
+      "code": "LINKE",
+      "key": "LINKE",
+      "name": "Linke (LEFT)",
+      "full": "Die Linke",
+      "family": "Left-wing",
+      "epGroup": "LEFT",
+      "epGroupBase": "LEFT",
+      "euro": "EL (LEFT)",
+      "color": "#990000",
+      "dark": false,
+      "baseline": 9.9,
+      "gov": "Govt.",
+      "inPrimary": true,
+      "via": "source",
+      "aliases": [
+        "linke",
+        "die linke"
+      ]
+    },
+    "GRUENE": {
+      "code": "GRUENE",
+      "key": "GRÜNE",
+      "name": "Grüne (Greens/EFA)",
+      "full": "Bündnis 90/Die Grünen",
+      "family": "Greens",
+      "epGroup": "Greens/EFA",
+      "epGroupBase": "Greens/EFA",
+      "euro": "EGP (Greens/EFA)",
+      "color": "#009900",
+      "dark": false,
+      "baseline": 6.3,
+      "gov": null,
+      "inPrimary": true,
+      "via": "source",
+      "aliases": [
+        "gruene",
+        "grune",
+        "b90/gruene",
+        "b90/grune",
+        "buendnis 90/die gruenen",
+        "bundnis 90/die grunen"
+      ]
+    },
+    "FDP": {
+      "code": "FDP",
+      "key": "FDP",
+      "name": "FDP (RE)",
+      "full": "Freie Demokratische Partei",
+      "family": "Liberal",
+      "epGroup": "RE",
+      "epGroupBase": "RE",
+      "euro": "ALDE (RE)",
+      "color": "#FFD700",
+      "dark": true,
+      "baseline": 5.8,
+      "gov": null,
+      "inPrimary": true,
+      "via": "source",
+      "aliases": [
+        "fdp"
+      ]
+    },
+    "TSP": {
+      "code": "TSP",
+      "key": "Tierschutz",
+      "name": "Tierschutzpartei",
+      "full": "Partei Mensch Klima Tierschutz",
+      "family": "Animal rights",
+      "epGroup": "LEFT",
+      "epGroupBase": "LEFT",
+      "euro": "Animal Politics (LEFT)",
+      "color": "#009076",
+      "dark": false,
+      "baseline": 1.7,
+      "gov": null,
+      "inPrimary": true,
+      "via": "source",
+      "aliases": [
+        "tierschutz",
+        "tsp",
+        "tierschutzpartei",
+        "mensch klima tierschutz",
+        "mut"
+      ]
+    },
+    "BASIS": {
+      "code": "BASIS",
+      "key": "Basis",
+      "name": "dieBasis",
+      "full": "Basisdemokratische Partei Deutschland",
+      "family": "Independent",
+      "epGroup": "*",
+      "epGroupBase": "*",
+      "euro": "None (*)",
+      "color": "#b9b6ab",
+      "dark": true,
+      "baseline": 1.7,
+      "gov": null,
+      "inPrimary": true,
+      "via": "source",
+      "aliases": [
+        "basis",
+        "diebasis",
+        "die basis"
+      ]
+    },
+    "FW": {
+      "code": "FW",
+      "key": "FW",
+      "name": "FW (RE)",
+      "full": "Freie Wähler",
+      "family": "Centrist",
+      "epGroup": "RE",
+      "epGroupBase": "RE",
+      "euro": "EDP (RE)",
+      "color": "#fa8c00",
+      "dark": true,
+      "baseline": 1.1,
+      "gov": null,
+      "inPrimary": true,
+      "via": "source",
+      "aliases": [
+        "fw",
+        "freie waehler",
+        "freie wahler"
+      ]
+    },
+    "HEIMAT": {
+      "code": "HEIMAT",
+      "key": "HEIMAT",
+      "name": "Die Heimat",
+      "full": "Die Heimat, formerly the NPD",
+      "family": "Far-right",
+      "epGroup": "*",
+      "epGroupBase": "*",
+      "euro": "None (*)",
+      "color": "#4a3728",
+      "dark": false,
+      "baseline": 0.8,
+      "gov": null,
+      "inPrimary": true,
+      "via": "source",
+      "aliases": [
+        "heimat",
+        "die heimat",
+        "npd"
+      ]
+    },
+    "PARTEI": {
+      "code": "PARTEI",
+      "key": "PARTEI",
+      "name": "Die PARTEI",
+      "full": "Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative",
+      "family": "Satirical",
+      "epGroup": "*",
+      "epGroupBase": "*",
+      "euro": "None (*)",
+      "color": "#7a6c5d",
+      "dark": false,
+      "baseline": 0.8,
+      "gov": null,
+      "inPrimary": true,
+      "via": "source",
+      "aliases": [
+        "partei",
+        "die partei"
+      ]
+    },
+    "BSW": {
+      "code": "BSW",
+      "key": "BSW",
+      "name": "BSW (NI)",
+      "full": "Bündnis Sahra Wagenknecht",
+      "family": "Left-conservative",
+      "epGroup": "NI",
+      "epGroupBase": "NI",
+      "euro": "None (NI)",
+      "color": "#9aa0a6",
+      "dark": true,
+      "baseline": 0,
+      "gov": null,
+      "inPrimary": true,
+      "via": "source",
+      "aliases": [
+        "bsw",
+        "buendnis sahra wagenknecht",
+        "bundnis sahra wagenknecht"
+      ]
+    },
+    "PIRATEN": {
+      "code": "PIRATEN",
+      "key": "PIRATEN",
+      "name": "Piraten",
+      "full": "Piratenpartei Deutschland",
+      "family": "Pirate",
+      "epGroup": "Pirate",
+      "epGroupBase": "Pirate",
+      "euro": "PPEU (*)",
+      "color": "#9c36b8",
+      "dark": false,
+      "baseline": null,
+      "gov": null,
+      "inPrimary": false,
+      "via": "config",
+      "aliases": [
+        "piraten",
+        "piratenpartei"
+      ]
+    },
+    "ODP": {
+      "code": "ODP",
+      "key": "ÖDP",
+      "name": "ÖDP",
+      "full": "Ökologisch-Demokratische Partei",
+      "family": "Greens",
+      "epGroup": "Greens/EFA",
+      "epGroupBase": "Greens/EFA",
+      "euro": "EGP (Greens/EFA)",
+      "color": "#f0a30a",
+      "dark": true,
+      "baseline": null,
+      "gov": null,
+      "inPrimary": false,
+      "via": "config",
+      "aliases": [
+        "oedp",
+        "odp"
+      ]
+    },
+    "BUENDNISC": {
+      "code": "BUENDNISC",
+      "key": "Bündnis C",
+      "name": "Bündnis C",
+      "full": "Bündnis C – Christen für Deutschland",
+      "family": "Christian fundamentalist",
+      "epGroup": "*",
+      "epGroupBase": "*",
+      "euro": "ECPP (*)",
+      "color": "#a16585",
+      "dark": false,
+      "baseline": null,
+      "gov": null,
+      "inPrimary": false,
+      "via": "config",
+      "aliases": [
+        "buendnis c",
+        "bundnis c",
+        "buendnisc",
+        "bc"
+      ]
+    },
+    "HPD": {
+      "code": "HPD",
+      "key": "HPD",
+      "name": "HPD",
+      "full": "Handwerker Partei Deutschland",
+      "family": "Single-issue",
+      "epGroup": "*",
+      "epGroupBase": "*",
+      "euro": "None (*)",
+      "color": "#999999",
+      "dark": false,
+      "baseline": null,
+      "gov": null,
+      "inPrimary": false,
+      "via": "config",
+      "aliases": [
+        "hpd",
+        "handwerker partei"
+      ]
+    },
+    "KPD": {
+      "code": "KPD",
+      "key": "KPD",
+      "name": "KPD",
+      "full": "Kommunistische Partei Deutschlands",
+      "family": "Far-left",
+      "epGroup": "*",
+      "epGroupBase": "*",
+      "euro": "None (*)",
+      "color": "#7c0000",
+      "dark": false,
+      "baseline": null,
+      "gov": null,
+      "inPrimary": false,
+      "via": "config",
+      "aliases": [
+        "kpd"
+      ]
+    },
+    "PDF": {
+      "code": "PDF",
+      "key": "PdF",
+      "name": "PdF",
+      "full": "Partei des Fortschritts",
+      "family": "Centrist",
+      "epGroup": "*",
+      "epGroupBase": "*",
+      "euro": "None (*)",
+      "color": "#00a3a3",
+      "dark": false,
+      "baseline": null,
+      "gov": null,
+      "inPrimary": false,
+      "via": "config",
+      "aliases": [
+        "pdf",
+        "partei des fortschritts"
+      ]
+    },
+    "TEAMFREIHEIT": {
+      "code": "TEAMFREIHEIT",
+      "key": "Team Freiheit",
+      "name": "Team Freiheit",
+      "full": "Team Freiheit",
+      "family": "Libertarian",
+      "epGroup": "*",
+      "epGroupBase": "*",
+      "euro": "None (*)",
+      "color": "#8a7f6d",
+      "dark": false,
+      "baseline": null,
+      "gov": null,
+      "inPrimary": false,
+      "via": "config",
+      "aliases": [
+        "team freiheit",
+        "teamfreiheit",
+        "tf"
+      ]
+    },
+    "VOLT": {
+      "code": "VOLT",
+      "key": "Volt",
+      "name": "Volt",
+      "full": "Volt Deutschland",
+      "family": "Eurofederalist",
+      "epGroup": "Greens/EFA",
+      "epGroupBase": "Greens/EFA",
+      "euro": "Volt (Greens/EFA)",
+      "color": "#502379",
+      "dark": false,
+      "baseline": null,
+      "gov": null,
+      "inPrimary": false,
+      "via": "config",
+      "aliases": [
+        "volt",
+        "volt deutschland"
+      ]
+    },
+    "WLD": {
+      "code": "WLD",
+      "key": "WLD",
+      "name": "WLD",
+      "full": "Wir leben Demokratie",
+      "family": "Independent",
+      "epGroup": "*",
+      "epGroupBase": "*",
+      "euro": "None (*)",
+      "color": "#6f7d8c",
+      "dark": false,
+      "baseline": null,
+      "gov": null,
+      "inPrimary": false,
+      "via": "config",
+      "aliases": [
+        "wld",
+        "wir leben demokratie"
+      ]
+    }
+  }
+}

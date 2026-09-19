@@ -2,16 +2,46 @@
   "_comment": "Lead candidate cards. `party` is a template code from data/parties.json and supplies the card colour, so nothing here repeats a hex value. `role` is the line under the name; `bio` the short paragraph. Order is the order they appear.",
   "items": [
     {
-      "name": "TODO Candidate Name",
-      "party": "TODO CODE",
-      "role": "TODO Incumbent head of government",
-      "bio": "TODO One or two sentences: current office, how they were selected, why they matter to this race."
+      "name": "Manuela Schwesig",
+      "party": "SPD",
+      "role": "Minister-President",
+      "bio": "Minister-president since 2017 and federal families minister before that; standing for a second full term after leading the SPD to 39.6% in 2021."
     },
     {
-      "name": "TODO Candidate Name",
-      "party": "TODO CODE",
+      "name": "Leif-Erik Holm",
+      "party": "AFD",
+      "role": "Candidate for minister-president",
+      "bio": "Bundestag member and the AfD's 2016 state lead candidate, back as its candidate for minister-president. Enrico Schult heads the state list."
+    },
+    {
+      "name": "Daniel Peters",
+      "party": "CDU",
       "role": null,
-      "bio": "TODO One or two sentences."
+      "bio": "State party chair and CDU parliamentary group leader since 2024, defending a result that has halved in the polls since 2021."
+    },
+    {
+      "name": "Simone Oldenburg",
+      "party": "LINKE",
+      "role": "Deputy Minister-President",
+      "bio": "Deputy minister-president and education minister in the outgoing coalition, standing as lead candidate for the second time."
+    },
+    {
+      "name": "Claudia Müller",
+      "party": "GRUENE",
+      "role": null,
+      "bio": "Bundestag member and parliamentary business manager for her group, leading the Greens' list jointly with Ole Krüger."
+    },
+    {
+      "name": "Jakob Schirmer",
+      "party": "FDP",
+      "role": null,
+      "bio": "Lead candidate for a party that entered the Landtag in 2021 after a decade out and has polled below the threshold since."
+    },
+    {
+      "name": "Peter Schabbel",
+      "party": "BSW",
+      "role": null,
+      "bio": "Lead candidate for the Sahra Wagenknecht Alliance, contesting a Mecklenburg-Vorpommern state election for the first time."
     }
   ]
 }

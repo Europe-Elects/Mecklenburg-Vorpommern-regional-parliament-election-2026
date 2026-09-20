@@ -750,8 +750,11 @@ function exitValueFor(partyCode, institute){
 /* One chart per institute, sharing a y-axis maximum so panels stay comparable. */
 function renderExitCharts(el, rows, cfg){
   const header = rows[0];
-  const body = rows.slice(1).filter(r => r[0]);
-  if (!body.some(r => r.slice(1).some(v => parseNum(v) != null))) {
+  /* Filtered on values, not just on the label: an institute that has not
+     published yet is a row of empty cells, and drawing it puts an empty axis
+     next to the one that does have figures. */
+  const body = rows.slice(1).filter(r => r[0] && r.slice(1).some(v => parseNum(v) != null));
+  if (!body.length) {
     throw Object.assign(new Error('not published yet'), {noData: true});
   }
 

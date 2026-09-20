@@ -69,7 +69,8 @@
       "exitVotes": "exit",
       "exitSeats": "exit_seat",
       "results": "results",
-      "demographic": "demographic vote - Infratest"
+      "demographic": null,
+      "_demographicComment": "Unhooked on election day. The tab still holds the Saxony-Anhalt series the Sheet was copied from, and build-data.js fails hard on it - \"unknown party DVU\" / \"Schill\". Those are not this territory's parties, so the alternative to unhooking it was publishing another state's demographics under this heading. Point it back at the tab once a real series for this territory is typed in, and turn sections.demographics back on."
     },
     "results": {
       "_comment": "Layout of the `results` tab. Column 0 is always the party name; these are the 0-based indexes of the rest.",
@@ -416,21 +417,8 @@
       ]
     },
 
-    "demographics": {
-      "label": "Demographic Vote",
-      "heading": "Vote share by group, election over election",
-      "sub": "Second vote (Zweitstimme) · Infratest dimap exit polls for ARD",
-      "panels": 2,
-      "_panelsComment": "How many independently-selectable charts to show side by side.",
-      "defaultCategories": ["Age", "Job"],
-      "_defaultCategoriesComment": "One category name per panel, matching the Group column in the Sheet tab. These are the Saxony-Anhalt tab's spellings and carry over on a copy — correct them if the MV tab differs.",
-      "yMax": 65,
-      "categoryLabels": {},
-      "categoryNotes": {},
-      "_labelsComment": "Optional display name and footnote per category, keyed by the Group value in the Sheet.",
-      "_source": null,
-      "_sourceComment": "No seed: there is no transcribed Mecklenburg-Vorpommern demographic series yet, so the charts stay empty until the pipeline reads the Sheet tab once. Drop the result into content/demographic-seed.json and point this back at it if a first load should never be blank."
-    },
+    "demographics": null,
+    "_demographicsComment": "Off: sheet.tabs.demographic is unhooked because that tab still carries the Saxony-Anhalt series. See the comment there. The section block from the template can be pasted back once this territory has its own breakdown.",
 
     "history": {
       "label": "Electoral History",

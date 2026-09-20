@@ -1,197 +1,197 @@
 {
-  "updated": "2026-09-20T13:25:21.677Z",
+  "updated": "2026-09-20T22:44:24.828Z",
   "validVotes": 0,
-  "counting": false,
+  "counting": true,
   "parties": [
     {
       "code": "SPD",
       "label": "SPD (S&D)",
       "votes": null,
-      "share": null,
-      "seats": null,
-      "changeV": null,
-      "changeS": null,
-      "reported": false
+      "share": 35.5,
+      "seats": 29,
+      "changeV": -4.1,
+      "changeS": -5,
+      "reported": true
     },
     {
       "code": "AFD",
       "label": "AfD (ESN)",
       "votes": null,
-      "share": null,
+      "share": 38.2,
       "seats": null,
-      "changeV": null,
+      "changeV": 21.5,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "CDU",
       "label": "CDU (EPP)",
       "votes": null,
-      "share": null,
+      "share": 4.9,
       "seats": null,
-      "changeV": null,
+      "changeV": -8.4,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "LINKE",
       "label": "Linke (LEFT)",
       "votes": null,
-      "share": null,
+      "share": 6.5,
       "seats": null,
-      "changeV": null,
+      "changeV": -3.4,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "GRUENE",
       "label": "Grüne (Greens/EFA)",
       "votes": null,
-      "share": null,
+      "share": 5.7,
       "seats": null,
-      "changeV": null,
+      "changeV": -0.6,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "FDP",
       "label": "FDP (RE)",
       "votes": null,
-      "share": null,
+      "share": 1,
       "seats": null,
-      "changeV": null,
+      "changeV": -4.8,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "TSP",
       "label": "Tierschutzpartei",
       "votes": null,
-      "share": null,
+      "share": 1.1,
       "seats": null,
-      "changeV": null,
+      "changeV": -0.6,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "FW",
       "label": "FW (RE)",
       "votes": null,
-      "share": null,
+      "share": 0.4,
       "seats": null,
-      "changeV": null,
+      "changeV": -0.7,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "PARTEI",
       "label": "Die PARTEI",
       "votes": null,
-      "share": null,
+      "share": 0.3,
       "seats": null,
-      "changeV": null,
+      "changeV": -0.5,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "PIRATEN",
       "label": "Piraten",
       "votes": null,
-      "share": null,
+      "share": 0.2,
       "seats": null,
       "changeV": null,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "ODP",
       "label": "ÖDP",
       "votes": null,
-      "share": null,
+      "share": 0.1,
       "seats": null,
       "changeV": null,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "BUENDNISC",
       "label": "Bündnis C",
       "votes": null,
-      "share": null,
+      "share": 0.1,
       "seats": null,
       "changeV": null,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "BSW",
       "label": "BSW (NI)",
       "votes": null,
-      "share": null,
+      "share": 4.8,
       "seats": null,
-      "changeV": null,
+      "changeV": 4.8,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "HPD",
       "label": "HPD",
       "votes": null,
-      "share": null,
+      "share": 0.5,
       "seats": null,
       "changeV": null,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "KPD",
       "label": "KPD",
       "votes": null,
-      "share": null,
+      "share": 0.1,
       "seats": null,
       "changeV": null,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "PDF",
       "label": "PdF",
       "votes": null,
-      "share": null,
+      "share": 0.1,
       "seats": null,
       "changeV": null,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "TEAMFREIHEIT",
       "label": "Team Freiheit",
       "votes": null,
-      "share": null,
+      "share": 0.3,
       "seats": null,
       "changeV": null,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "VOLT",
       "label": "Volt",
       "votes": null,
-      "share": null,
+      "share": 0.2,
       "seats": null,
       "changeV": null,
       "changeS": null,
-      "reported": false
+      "reported": true
     },
     {
       "code": "WLD",
       "label": "WLD",
       "votes": null,
-      "share": null,
+      "share": 0.1,
       "seats": null,
       "changeV": null,
       "changeS": null,
-      "reported": false
+      "reported": true
     }
   ]
 }

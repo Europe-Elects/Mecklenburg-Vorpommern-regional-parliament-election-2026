@@ -62,7 +62,8 @@
   },
 
   "sheet": {
-    "id": "TODO paste the Sheet ID out of its URL",
+    "id": "1Elz5bxng2yPwAKyAqr6ITrUUKolIJsjJQFtJO0qCz0U",
+    "_idComment": "Must be shared as Anyone with the link → Viewer. Both the Action and the browser read this through the gviz CSV endpoint with no credentials at all, so a restricted Sheet returns HTTP 401 to everything — the pipeline, the page's fallback read, and Datawrapper's linked dataset alike.",
     "_tabsComment": "Tabs are referenced by NAME, never by gid. A gid is regenerated every time a Sheet is duplicated; the name survives. These names are the ones that carry over from the Saxony-Anhalt Sheet — check them against the tab strip after copying.",
     "tabs": {
       "exitVotes": "exit",

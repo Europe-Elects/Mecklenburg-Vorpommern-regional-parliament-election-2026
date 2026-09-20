@@ -350,10 +350,10 @@
       "sub": "A mix of exit poll and counted result, published and revised by both institutes through election night",
       "note": "Both institutes publish a first projection at about 18:15 CEST on 20 September 2026 and revise it as counting proceeds. These charts stay empty until then.",
       "charts": [
-        { "label": "Infratest dimap · popular vote", "id": "TODO01", "version": 1, "height": 397, "ariaLabel": "Line chart", "live": true },
-        { "label": "Infratest dimap · seats", "id": "TODO02", "version": 1, "height": 397, "ariaLabel": "Line chart", "live": true },
-        { "label": "Forschungsgruppe Wahlen · popular vote", "id": "TODO03", "version": 1, "height": 397, "ariaLabel": "Line chart", "live": true },
-        { "label": "Forschungsgruppe Wahlen · seats", "id": "TODO04", "version": 1, "height": 397, "ariaLabel": "Line chart", "live": true }
+        { "label": "Infratest dimap · popular vote", "id": "Uue7i", "version": 1, "height": 397, "ariaLabel": "Line chart", "live": true },
+        { "label": "Infratest dimap · seats", "id": "Y7OBN", "version": 1, "height": 397, "ariaLabel": "Line chart", "live": true },
+        { "label": "Forschungsgruppe Wahlen · popular vote", "id": "up1FJ", "version": 1, "height": 397, "ariaLabel": "Line chart", "live": true },
+        { "label": "Forschungsgruppe Wahlen · seats", "id": "jVQPL", "version": 1, "height": 397, "ariaLabel": "Line chart", "live": true }
       ]
     },
 
@@ -378,7 +378,7 @@
       "heading": "Mecklenburg-Vorpommern 2026 · turnout by the hour",
       "sub": "Cumulative turnout reported through election day, local time",
       "note": "How turnout built through the day, this election against previous ones. Turnout was 70.8% in 2021, when the state election was held alongside the federal one.",
-      "chart": { "label": "Turnout", "id": "TODO05", "version": 1, "height": 391, "ariaLabel": "Line chart", "live": true }
+      "chart": { "label": "Turnout", "id": "EHH6D", "version": 1, "height": 391, "ariaLabel": "Line chart", "live": true }
     },
 
     "previousResult": {
@@ -410,8 +410,8 @@
       "sub": "Combined seat share of viable coalitions, per the latest Infratest dimap and Forschungsgruppe Wahlen exit poll",
       "note": "Coalition arithmetic appears once the first exit poll is published at 18:00 CEST on 20 September 2026. 36 of 71 seats are a majority, more where overhang and levelling seats enlarge the chamber.",
       "charts": [
-        { "label": "Infratest dimap", "id": "TODO06", "version": 1, "height": 207, "ariaLabel": "Stacked Bars", "live": true },
-        { "label": "Forschungsgruppe Wahlen", "id": "TODO07", "version": 1, "height": 207, "ariaLabel": "Stacked Bars", "live": true }
+        { "label": "Infratest dimap", "id": "f5X88", "version": 1, "height": 207, "ariaLabel": "Stacked Bars", "live": true },
+        { "label": "Forschungsgruppe Wahlen", "id": "iTJFV", "version": 1, "height": 207, "ariaLabel": "Stacked Bars", "live": true }
       ]
     },
 
@@ -436,8 +436,8 @@
       "heading": "Mecklenburg-Vorpommern · second-vote share and seats by election, 1990–2026",
       "sub": "First state election after German reunification onward · the 2026 column is not a certified result until counting finishes",
       "charts": [
-        { "label": "Popular vote", "id": "TODO08", "version": 1, "height": 268, "ariaLabel": "Stacked Bars", "live": false },
-        { "label": "Seats", "id": "TODO09", "version": 1, "height": 251, "ariaLabel": "Stacked Bars", "live": false }
+        { "label": "Popular vote", "id": "yQA5G", "version": 1, "height": 268, "ariaLabel": "Stacked Bars", "live": false },
+        { "label": "Seats", "id": "tXfNj", "version": 1, "height": 251, "ariaLabel": "Stacked Bars", "live": false }
       ]
     },
 

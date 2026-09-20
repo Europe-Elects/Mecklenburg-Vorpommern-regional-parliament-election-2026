@@ -380,7 +380,11 @@
       "heading": "Mecklenburg-Vorpommern 2026 · turnout by the hour",
       "sub": "Cumulative turnout reported through election day, local time",
       "note": "How turnout built through the day, this election against previous ones. Turnout was 70.8% in 2021, when the state election was held alongside the federal one.",
-      "chart": { "label": "Turnout", "id": "EHH6D", "version": 1, "height": 391, "ariaLabel": "Line chart", "live": true }
+      "empty": "Turnout figures for this election are not in this chart yet. It reappears on its own once the chart is reading this election’s sheet.",
+      "_emptyComment": "Shown in place of the embed while the guard below fails. The check repeats on every poll, so no edit here is needed once the chart is repointed.",
+      "chart": { "label": "Turnout", "id": "EHH6D", "version": 1, "height": 391, "ariaLabel": "Line chart", "live": true,
+        "requireRows": { "2021 (incl. postal votes)": "70.8%" },
+        "_requireRowsComment": "A copied chart renders happily with the previous election’s figures in it and nothing outside the iframe says which dataset it holds. This asserts that the 2021 row ends on Mecklenburg-Vorpommern’s own turnout. Saxony-Anhalt, which both Sheets were copied from, shares this state’s election years exactly, so the years alone prove nothing and the value has to be checked - it reads 60.3% there. Verified against the chart’s current version, not the pinned one, because repointing and republishing is what bumps it." }
     },
 
     "previousResult": {

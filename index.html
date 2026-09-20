@@ -372,7 +372,92 @@ RENDER.results = cfg => band(cfg.label) + `<div class="card">
    band, heading, embeds, footnote is the same shape every time. So a new one —
    a polling average, a seat projection, a swing chart — can be added in
    config.json alone, under any key, with no change here. */
+/* A chart copied from the previous election renders perfectly happily with the
+   previous election's figures still in it, and nothing on the outside of a
+   Datawrapper iframe says which dataset it is showing. So a chart may declare
+   `requireRows` in config: row label -> the value that row has to end on for
+   this territory. Until the chart's own dataset agrees, the embed is left out
+   and the section shows `empty` instead, and the check runs again on every
+   poll, so repointing the chart brings it back with no edit here.
+
+   Read from the chart's CURRENT version rather than chart.version, because the
+   point of the guard is to notice the moment someone repoints the chart and
+   republishes it - and republishing is exactly what bumps the version. */
+const guarded = [];
+
+const dwBase = id => `https://datawrapper.dwcdn.net/${encodeURIComponent(id)}/`;
+
+/* The unversioned URL is a stub that redirects to whichever version is live. */
+async function dwCurrentVersion(id){
+  const res = await fetch(dwBase(id), {cache: 'no-store'});
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  const m = (await res.text()).match(/\/(\d+)\/['"]/);
+  if (!m) throw new Error('no version in the redirect stub');
+  return Number(m[1]);
+}
+
+/* The last non-empty cell of a row - the end-of-day column for a turnout
+   series, whichever column that turns out to be. */
+function lastCell(row){
+  for (let i = row.length - 1; i > 0; i--) if (String(row[i]).trim()) return row[i];
+  return '';
+}
+
+async function chartCarriesOwnData(chart){
+  const version = await dwCurrentVersion(chart.id);
+  const res = await fetch(`${dwBase(chart.id)}${version}/dataset.csv`, {cache: 'no-store'});
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  const rows = parseCSV(new TextDecoder('utf-8').decode(await res.arrayBuffer()));
+  const ok = Object.entries(chart.requireRows).every(([label, want]) => {
+    const key = String(label).trim().toLowerCase();
+    const row = rows.find(r => String(r[0]).trim().toLowerCase() === key);
+    if (!row) return false;
+    const got = parseNum(lastCell(row)), need = parseNum(want);
+    return got != null && need != null && Math.abs(got - need) < 0.05;
+  });
+  return {ok, version};
+}
+
+async function verifyGuardedEmbeds(){
+  for (const g of guarded) {
+    const el = document.getElementById(g.slot);
+    if (!el) continue;
+    let verdict;
+    try {
+      verdict = await chartCarriesOwnData(g.chart);
+    } catch (e) {
+      /* Unverifiable is not the same as wrong. Leave whatever is on screen and
+         try again next cycle rather than flapping on a CDN hiccup. */
+      console.warn(`chart ${g.chart.id}: could not read its dataset -`, e.message);
+      continue;
+    }
+    if (!verdict.ok) {
+      if (g.shown !== false) {
+        el.innerHTML = `<div class="placeholder">${esc(txt(g.cfg.empty) || 'This chart is not showing this election’s figures yet.')}</div>`;
+        g.shown = false;
+        console.warn(`chart ${g.chart.id}: version ${verdict.version} does not carry this election's figures - embed withheld`);
+        reportHeight();
+      }
+      continue;
+    }
+    if (g.shown === true && g.version === verdict.version) continue;
+    el.innerHTML = embed({...g.chart, version: verdict.version});
+    g.shown = true;
+    g.version = verdict.version;
+    el.querySelectorAll('iframe').forEach(f => watchEmbed(f, 1));
+    reportHeight();
+  }
+}
+
 function renderEmbedSection(cfg){
+  const chart = cfg.chart;
+  if (chart && chart.id && !/^TODO/i.test(chart.id) && chart.requireRows) {
+    const slot = `guarded-${chart.id.replace(/[^A-Za-z0-9]/g, '')}`;
+    guarded.push({chart, cfg, slot, shown: null, version: null});
+    return band(cfg.label) + `<div class="card">${cardHead(cfg)}`
+      + `<div id="${slot}"><div class="placeholder">Checking this chart’s data…</div></div>`
+      + `${note(cfg)}</div>`;
+  }
   const body = Array.isArray(cfg.charts) ? embedGrid(cfg.charts) : embed(cfg.chart);
   if (!body) return '';
   return band(cfg.label) + `<div class="card">${cardHead(cfg)}${body}${note(cfg)}</div>`;
@@ -940,6 +1025,9 @@ async function runPoll(){
   } catch (e) {
     pollFailures++;
   }
+  /* Its own try: a chart guard that cannot reach Datawrapper says nothing about
+     whether the result feed is healthy, so it must not count as a poll failure. */
+  try { await verifyGuardedEmbeds(); } catch (e) { console.warn('embed guard failed:', e); }
   renderDataStatus();
   schedulePoll();
 }

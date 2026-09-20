@@ -272,7 +272,8 @@
         "color": "#7c0000",
         "euro": "None (*)",
         "baseline": null,
-        "aliases": ["KPD"]
+        "aliases": ["KPD", "KDP"],
+        "_aliasComment": "KDP is a transposition of KPD and is how the party is spelled in the Sheet's results tab. Kept as an alias so a corrected Sheet and an uncorrected one both resolve — without it the row falls into Others, which on a results table looks like a real figure for a party nobody can find."
       },
       "PdF": {
         "code": "PDF",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19T17:09:38.689Z",
+  "updated": "2026-09-20T12:46:59.356Z",
   "source": {
     "repo": "Europe-Elects/PartiesData",
     "ref": "main",
@@ -391,7 +391,8 @@
       "inPrimary": false,
       "via": "config",
       "aliases": [
-        "kpd"
+        "kpd",
+        "kdp"
       ]
     },
     "PDF": {

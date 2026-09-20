@@ -7,7 +7,7 @@
     "title": "Regional parliament election in Mecklenburg-Vorpommern · 2026",
     "lang": "en",
     "frameMessageKey": "electionFrameHeight",
-    "postUrl": null,
+    "postUrl": "https://europeelects.eu/2026/09/20/regional-parliament-election-in-mecklenburg-vorpommern-2026/",
     "_postUrlComment": "The WordPress post this page is embedded in. Used by scripts/check-embed.js, which is the only thing that looks at it — the page never calls back to the post. Set it once the post exists.",
     "pagesUrl": "https://europe-elects.github.io/Mecklenburg-Vorpommern-regional-parliament-election-2026/",
     "_pagesUrlComment": "Where this page is published. Publish it alongside the article: it is served from a CDN and executes no PHP, so it stays up when the WordPress host does not.",

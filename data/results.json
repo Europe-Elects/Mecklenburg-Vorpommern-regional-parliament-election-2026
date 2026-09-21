@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T22:44:24.828Z",
+  "updated": "2026-09-21T11:00:56.774Z",
   "validVotes": 0,
   "counting": true,
   "parties": [
@@ -18,9 +18,9 @@
       "label": "AfD (ESN)",
       "votes": null,
       "share": 38.2,
-      "seats": null,
+      "seats": 32,
       "changeV": 21.5,
-      "changeS": null,
+      "changeS": 18,
       "reported": true
     },
     {
@@ -28,9 +28,9 @@
       "label": "CDU (EPP)",
       "votes": null,
       "share": 4.9,
-      "seats": null,
+      "seats": 0,
       "changeV": -8.4,
-      "changeS": null,
+      "changeS": -12,
       "reported": true
     },
     {
@@ -38,9 +38,9 @@
       "label": "Linke (LEFT)",
       "votes": null,
       "share": 6.5,
-      "seats": null,
+      "seats": 5,
       "changeV": -3.4,
-      "changeS": null,
+      "changeS": -4,
       "reported": true
     },
     {
@@ -48,9 +48,9 @@
       "label": "Grüne (Greens/EFA)",
       "votes": null,
       "share": 5.7,
-      "seats": null,
+      "seats": 5,
       "changeV": -0.6,
-      "changeS": null,
+      "changeS": 0,
       "reported": true
     },
     {
@@ -58,9 +58,9 @@
       "label": "FDP (RE)",
       "votes": null,
       "share": 1,
-      "seats": null,
+      "seats": 0,
       "changeV": -4.8,
-      "changeS": null,
+      "changeS": -5,
       "reported": true
     },
     {
@@ -128,7 +128,7 @@
       "label": "BSW (NI)",
       "votes": null,
       "share": 4.8,
-      "seats": null,
+      "seats": 0,
       "changeV": 4.8,
       "changeS": null,
       "reported": true
